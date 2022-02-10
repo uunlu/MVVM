@@ -18,10 +18,7 @@ struct ContainerView: View {
             viewModel.resource.isLoading{
                 Text("Loading...")
             }
-            viewModel.resource.hasResource { model in
-                Text("Name: \(model.name)")
-                Text("Email: \(model.email)")
-            }
+            viewModel.resource.hasResource { PersonView(model: $0) }
             Spacer()
             viewModel.resource.hasError { error in
                 Text("Error: \(error.localizedDescription)")

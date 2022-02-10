@@ -60,5 +60,15 @@ extension Resource {
         }
         return nil
     }
+}
 
+// TODO: - What is UI is not SwiftUI?
+
+extension Resource {
+    func hasResource(handler: @escaping (T?)->Void) {
+        if let value = value {
+            return handler(value)
+        }
+        return handler(nil)
+    }
 }

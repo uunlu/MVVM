@@ -16,9 +16,9 @@ class ContainerViewModel: ObservableObject {
         bind()
         self.network.resource = .loading
         DispatchQueue.global(qos: DispatchQoS.background.qosClass).asyncAfter(deadline: .now() + 1) {
-               DispatchQueue.main.async {
-                   self.network.resource = .success(.init(name: "Messi", email: "messi@me.com"))
-               }
+            DispatchQueue.main.async {
+                self.network.resource = .success(.init(name: "Messi", email: "messi@me.com"))
+            }
             
             DispatchQueue.global(qos: DispatchQoS.background.qosClass).asyncAfter(deadline: .now() + 1) {
                 DispatchQueue.main.async {
@@ -47,7 +47,6 @@ class ContainerNetworkSpy: NetworkViewModel {
     var bag: Set<AnyCancellable> = Set<AnyCancellable>()
     @Published var resource: Resource<Person> = .pending
     var network: Network = JSONNetwork()
-    
 }
 
 class JSONNetwork: Network {

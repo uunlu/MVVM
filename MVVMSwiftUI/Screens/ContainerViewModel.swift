@@ -6,17 +6,16 @@
 //
 
 import Foundation
+import Combine
 
-class ContainerViewModel {
-    var name: String = ""
-    var email: String = ""
-    var onChange: ((String, String)->Void)?
+class ContainerViewModel: ObservableObject {
+    @Published var name: String = ""
+    @Published  var email: String = ""
     
     func load() {
         RunLoop.current.run(until: Date().addingTimeInterval(1))
         print("updating")
         name = "Messi"
         email = "messi@fcbarcelona.com"
-        onChange?(name, email)
     }
 }

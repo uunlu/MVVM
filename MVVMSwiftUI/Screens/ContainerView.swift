@@ -8,24 +8,16 @@
 import SwiftUI
 
 struct ContainerView: View {
-    @State var name: String = ""
-    @State var email: String = ""
-    var viewModel = ContainerViewModel()
+    @StateObject var viewModel = ContainerViewModel()
 
     var body: some View {
         VStack {
-            Text(name)
-            Text(email)
+            Text(viewModel.name)
+            Text(viewModel.email)
         }
         .onAppear{
-            viewModel.onChange = update
             viewModel.load()
         }
-    }
-    
-    private func update(_ name: String, _ email: String) {
-        self.name = name
-        self.email = email
     }
 }
 

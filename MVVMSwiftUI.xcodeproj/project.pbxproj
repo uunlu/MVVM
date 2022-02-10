@@ -11,6 +11,8 @@
 		3527DF9827B51CA1007D51E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3527DF9727B51CA1007D51E8 /* ContentView.swift */; };
 		3527DF9A27B51CA4007D51E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3527DF9927B51CA4007D51E8 /* Assets.xcassets */; };
 		3527DF9D27B51CA4007D51E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3527DF9C27B51CA4007D51E8 /* Preview Assets.xcassets */; };
+		3527DFA427B51CE3007D51E8 /* ContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3527DFA327B51CE3007D51E8 /* ContainerViewModel.swift */; };
+		3527DFA727B51D09007D51E8 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3527DFA627B51D09007D51E8 /* ContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		3527DF9727B51CA1007D51E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3527DF9927B51CA4007D51E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3527DF9C27B51CA4007D51E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3527DFA327B51CE3007D51E8 /* ContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewModel.swift; sourceTree = "<group>"; };
+		3527DFA627B51D09007D51E8 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 				3527DF9727B51CA1007D51E8 /* ContentView.swift */,
 				3527DF9927B51CA4007D51E8 /* Assets.xcassets */,
 				3527DF9B27B51CA4007D51E8 /* Preview Content */,
+				3527DFA527B51CE9007D51E8 /* Screens */,
 			);
 			path = MVVMSwiftUI;
 			sourceTree = "<group>";
@@ -65,6 +70,15 @@
 				3527DF9C27B51CA4007D51E8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3527DFA527B51CE9007D51E8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3527DFA327B51CE3007D51E8 /* ContainerViewModel.swift */,
+				3527DFA627B51D09007D51E8 /* ContainerView.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3527DFA727B51D09007D51E8 /* ContainerView.swift in Sources */,
 				3527DF9827B51CA1007D51E8 /* ContentView.swift in Sources */,
 				3527DF9627B51CA1007D51E8 /* MVVMSwiftUIApp.swift in Sources */,
+				3527DFA427B51CE3007D51E8 /* ContainerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
